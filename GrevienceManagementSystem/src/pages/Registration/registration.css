@@ -1,0 +1,325 @@
+/* =================================
+   Registration Page
+================================= */
+
+.registration-page {
+  min-height: 100vh;
+  width: 100%;
+
+  background-image: url("../../assets/gmcregistration.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding: 40px 8%;
+}
+
+
+/* =================================
+   Registration Card
+================================= */
+
+.registration-card {
+  width: 100%;
+  max-width: 430px;
+
+  padding: 18px;
+
+  background: rgba(242, 247, 252, 0.97);
+
+  border: 1px solid #c9d9e8;
+
+  border-radius: 14px;
+
+  box-shadow: 0 14px 40px rgba(18, 58, 99, 0.20);
+
+  backdrop-filter: blur(8px);
+}
+
+
+/* =================================
+   Header
+================================= */
+
+.registration-header {
+  text-align: center;
+
+  margin-bottom: 28px;
+}
+
+.registration-title {
+  margin: 0;
+
+  color: #17365d;
+
+  font-size: 27px;
+  font-weight: 600;
+
+  line-height: 1.3;
+}
+
+.registration-subtitle {
+  margin: 8px 0 0;
+
+  color: #6b7280;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+
+/* =================================
+   Registration Form
+================================= */
+
+.registration-form {
+  width: 100%;
+}
+
+
+/* =================================
+   Form Group
+================================= */
+
+.registration-form-group {
+  width: 100%;
+
+  margin-bottom: 18px;
+}
+
+
+/* =================================
+   Labels
+================================= */
+
+.registration-form-label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #374151;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+/* =================================
+   Input Fields
+================================= */
+
+.registration-input {
+  display: block;
+
+  width: 100%;
+  height: 44px;
+
+  padding: 0 13px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #9fb3c6;
+
+  border-radius: 7px;
+
+  background-color: #ffffff;
+
+  color: #1f2937;
+
+  font-size: 14px;
+  font-weight: 400;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+/* =================================
+   Placeholder
+================================= */
+
+.registration-input::placeholder {
+  color: #9aa8b6;
+
+  opacity: 1;
+
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+/* =================================
+   Input Hover
+================================= */
+
+.registration-input:hover {
+  border-color: #7f98ae;
+}
+
+
+/* =================================
+   Input Focus
+================================= */
+
+.registration-input:focus {
+  border-color: #2563a6;
+
+  background-color: #ffffff;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 166, 0.10);
+}
+
+
+/* =================================
+   Registration Button
+================================= */
+
+.registration-button {
+  display: block;
+
+  width: 100%;
+  height: 45px;
+
+  margin-top: 8px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background-color: #2563a6;
+
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+
+/* Button Hover */
+
+.registration-button:hover {
+  background-color: #1d4f85;
+}
+
+
+/* Button Click */
+
+.registration-button:active {
+  transform: scale(0.99);
+}
+
+
+/* =================================
+   Registration Footer
+================================= */
+
+.registration-footer {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 5px;
+
+  margin-top: 22px;
+}
+
+
+/* =================================
+   Footer Text
+================================= */
+
+.registration-footer-text {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+
+/* =================================
+   Login Link
+================================= */
+
+.registration-login-link {
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #2563a6;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.registration-login-link:hover {
+  text-decoration: underline;
+}
+
+
+/* =================================
+   Responsive
+================================= */
+
+@media (max-width: 900px) {
+
+  .registration-page {
+    justify-content: center;
+
+    padding: 30px;
+  }
+
+  .registration-card {
+    max-width: 430px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .registration-page {
+    padding: 20px;
+  }
+
+  .registration-card {
+    padding: 30px 22px;
+
+    border-radius: 12px;
+  }
+
+  .registration-title {
+    font-size: 23px;
+  }
+
+  .registration-subtitle {
+    font-size: 12px;
+  }
+
+  .registration-footer {
+    flex-direction: column;
+
+    gap: 4px;
+  }
+}
