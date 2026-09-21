@@ -1,0 +1,104 @@
+.dashboard {
+  padding: 28px;
+}
+
+
+/* ---------------- Dashboard Header ---------------- */
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 25px;
+}
+
+.dashboard-header h1 {
+  color: #1F2937;
+
+  font-size: 24px;
+
+  margin-bottom: 5px;
+}
+
+.dashboard-header p {
+  color: #64748B;
+
+  font-size: 13px;
+}
+
+
+/* ---------------- Primary Button ---------------- */
+
+.primary-btn {
+  background-color: #2563A6;
+
+  color: #FFFFFF;
+
+  border: none;
+
+  padding: 11px 18px;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-size: 13px;
+
+  font-weight: 500;
+}
+
+.primary-btn:hover {
+  background-color: #1D4F85;
+}
+
+
+/* ---------------- Dashboard Cards ---------------- */
+
+.dashboard-cards {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px;
+}
+
+.dashboard-card {
+  background-color: #FFFFFF;
+
+  border: 1px solid #D5E0EA;
+
+  border-radius: 8px;
+
+  padding: 20px;
+
+  min-height: 130px;
+}
+
+.card-title {
+  color: #64748B;
+
+  font-size: 13px;
+}
+
+.dashboard-card h2 {
+  color: #123A63;
+
+  font-size: 26px;
+
+  margin: 12px 0 8px;
+}
+
+.card-info {
+  color: #64748B;
+
+  font-size: 11px;
+}
+
+.card-info.success {
+  color: #4F8A63;
+}
+
+.card-info.warning {
+  color: #D89B2B;
+}
